@@ -7,7 +7,7 @@
     "setup": "npm install --prefix server; npm install --prefix client",
     "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
     "start": "npm run dev",
-    "build": "npm run build --prefix client",
+    "build": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
     "preview": "npm run preview --prefix client"
   },
   "devDependencies": {

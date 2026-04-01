@@ -141,7 +141,7 @@ function extractTicketType(message) {
 function extractShow(message) {
   const value = message.toLowerCase();
   if (/(skip|no show|none)/.test(value)) return 'none';
-  if (value.includes('dino')) return 'show-dino';
+  if (value.inqcludes('dino')) return 'show-dino';
   if (value.includes('space')) return 'show-space';
   if (value.includes('art')) return 'show-art';
   return '';
