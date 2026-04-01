@@ -1,0 +1,16 @@
+{
+  "name": "museum-ticketing-chatbot-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Root scripts for running frontend and backend with one command",
+  "scripts": {
+    "setup": "npm install --prefix server; npm install --prefix client",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "npm run dev",
+    "build": "npm run build --prefix client",
+    "preview": "npm run preview --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
